@@ -1,12 +1,12 @@
 ---
-title: "About Me"
+title: "Alleged Biostatistics Site"
 about:
   id: me
   template: broadside
   image: img/profile.png
-  ---
+---
   
-  # Welcome... To the R-chive
+# Welcome... To the R-chive
   
   
-  Check the Projects tab for my R 101 tutorial!
+  Check out my R 101 tutorial!

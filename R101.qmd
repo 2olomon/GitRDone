@@ -28,7 +28,7 @@ You want to click the blue text in the top line saying "Install R for the first 
 
 That takes you to another page, where you click on the top link, "Download R-4.4.2 for Windows". (If that number is higher, it means this guide was written when R was in a previous version)
 
-![](/R101imgs/image4.png)
+![](/R101imgs/image6.png)
 
 Now, we can technically just use raw R, but we get a much nicer interface if we plug it into R Studio. Go back to <https://posit.co/download/rstudio-desktop/> and click "DOWNLOAD RSTUDIO DESKTOP FOR WINDOWS"
 
