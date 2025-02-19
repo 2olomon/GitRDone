@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R 101</title>
+<title>About Me – R 101</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,7 +33,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -70,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -95,6 +94,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./R101.html"> 
+<span class="menu-text">R 101</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -108,518 +111,26 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#r-101-for-biosciences" id="toc-r-101-for-biosciences" class="nav-link active" data-scroll-target="#r-101-for-biosciences">R 101 for biosciences</a>
-  <ul class="collapse">
-  <li><a href="#downloading-and-installing-r" id="toc-downloading-and-installing-r" class="nav-link" data-scroll-target="#downloading-and-installing-r">Downloading and installing R</a></li>
-  <li><a href="#r-terminology" id="toc-r-terminology" class="nav-link" data-scroll-target="#r-terminology">R terminology</a></li>
-  <li><a href="#making-a-new-project" id="toc-making-a-new-project" class="nav-link" data-scroll-target="#making-a-new-project">Making a new project</a></li>
-  <li><a href="#installing-and-loading-packages" id="toc-installing-and-loading-packages" class="nav-link" data-scroll-target="#installing-and-loading-packages">Installing and loading packages</a></li>
-  <li><a href="#comments" id="toc-comments" class="nav-link" data-scroll-target="#comments">Comments</a></li>
-  <li><a href="#installing-data" id="toc-installing-data" class="nav-link" data-scroll-target="#installing-data">Installing data</a></li>
-  <li><a href="#tidy-data" id="toc-tidy-data" class="nav-link" data-scroll-target="#tidy-data">Tidy Data</a></li>
-  <li><a href="#checking-assumptions" id="toc-checking-assumptions" class="nav-link" data-scroll-target="#checking-assumptions">Checking Assumptions</a></li>
-  <li><a href="#statistical-tests" id="toc-statistical-tests" class="nav-link" data-scroll-target="#statistical-tests">Statistical tests</a>
-  <ul class="collapse">
-  <li><a href="#one-sample-t-tests" id="toc-one-sample-t-tests" class="nav-link" data-scroll-target="#one-sample-t-tests">One-sample t-tests</a></li>
-  <li><a href="#two-sample-t-test" id="toc-two-sample-t-test" class="nav-link" data-scroll-target="#two-sample-t-test">Two-sample t-test</a></li>
-  <li><a href="#correlation-pearsons" id="toc-correlation-pearsons" class="nav-link" data-scroll-target="#correlation-pearsons">Correlation (Pearson’s)</a></li>
-  <li><a href="#anova" id="toc-anova" class="nav-link" data-scroll-target="#anova">ANOVA</a></li>
-  </ul></li>
-  <li><a href="#better-graphs" id="toc-better-graphs" class="nav-link" data-scroll-target="#better-graphs">Better Graphs</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-about-broadside column-page">
+  <div class="about-main">
+    <div class="about-entity" style="background-image: url('img/profile.png')"></div>
+    <div class="about-contents"><header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">R 101</h1>
+<h1 class="title">About Me</h1>
 </div>
-
-
-
 <div class="quarto-title-meta">
-
-    
-  
-    
   </div>
-  
-
-
-</header>
-
-
-<section id="r-101-for-biosciences" class="level1">
-<h1>R 101 for biosciences</h1>
-<p>This is a basic introduction to the coding language known as R. Our first bit of good news is that R has a fairly intuitive graphical interface, called R Studio, so we don’t have to faff about with command lines to use it. Our second bit of good news is that it’s very straightforward to select, order, and analyse data, and make some really beautiful graphs. Let’s get started!</p>
-<section id="downloading-and-installing-r" class="level2">
-<h2 class="anchored" data-anchor-id="downloading-and-installing-r">Downloading and installing R</h2>
-<p>Go to <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a> , scroll down a little, and click on “DOWNLOAD AND INSTALL R”</p>
-<p><img src=".\R101imgs/r0.png" class="img-fluid"></p>
-<p>Click through the first link to the following page and select the appropriate option from the top box.</p>
-<p><img src=".\R101imgs/R1.PNG" class="img-fluid"></p>
-<p>Clicking through “Download R for Windows” takes you to the following page:</p>
-<p><img src=".\R101imgs/r2.png" class="img-fluid"></p>
-<p>You want to click the blue text in the top line saying “Install R for the first time”.</p>
-<p>That takes you to another page, where you click on the top link, “Download R-4.4.2 for Windows”. (If that number is higher, it means this guide was written when R was in a previous version)</p>
-<p><img src=".\R101imgs/r3.png" class="img-fluid"></p>
-<p>Now, we can technically just use raw R, but we get a much nicer interface if we plug it into R Studio. Go back to <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a> and click “DOWNLOAD RSTUDIO DESKTOP FOR WINDOWS”</p>
-<p><img src=".\R101imgs/r0.png" class="img-fluid"></p>
-<p>Again, run the .exe file you just downloaded, and you should now have R Studio working on your PC.</p>
-<p>(Note: if you have a Chromebook, you’ll probably need to use an online version of R, which seems to require an institutional license. Advice for this case is pending.)</p>
-<p>Congratulations! You’ve installed R.</p>
-</section>
-<section id="r-terminology" class="level2">
-<h2 class="anchored" data-anchor-id="r-terminology">R terminology</h2>
-<p>A few basic terms: a <strong>variable</strong> is, in this context, any data stored in R. A <strong>vector</strong> is a string of variables, and a <strong>dataframe</strong> is a stack of vectors. These can be compared to individual cells, columns, and sheets in Excel.</p>
-<p>We can name all of these things. To create a named variable, we simply type</p>
-<p><code>X &lt;- 25</code></p>
-<p>There are a few cases where naming a single variable can be useful. However, if we want to create a vector, we need multiple variables.</p>
-<p><code>Numbers &lt;- c(1, 2, 3, 4, 5)</code></p>
-<p>If you want your vector to contain words, not just numbers, you need to put quotemarks around them</p>
-<p><code>Dogs &lt;- c("Xena", "Max", "Luna", "Holly")</code></p>
-<p>Try copying these examples into the console section, at the bottom left of the screen, and then press enter to run them.</p>
-<p><img src=".\R101imgs/r4.PNG" class="img-fluid"></p>
-<p>As you create these, you should be able to see them appearing in the “Environment” box, in the top right corner.</p>
-<p>Now that we have our vectors, let’s do some maths to them!</p>
-<p>Firstly, “call” your vector by typing it and running it.</p>
-<p><code>Numbers</code></p>
-<p>See how it prints out the numbers you chose? Now try</p>
-<p><code>Numbers - 2</code></p>
-<p><code>Numbers * 5</code></p>
-<p>And we can save an output as a new vector by naming it.</p>
-<p><code>Numbersx2 &lt;- Numbers *2</code></p>
-<p>And then print that with</p>
-<p><code>Numbersx2</code></p>
-<p>These kinds of simple operations can be useful; for example, if your vector is a list of weights in kilograms and you want it in grams, you can use</p>
-<p><code>Weight(g) &lt;- Weight*1000</code></p>
-<p>But the real power of R lies in graphical and statistical analysis. We can download a number of free datasets to practice with; since this is aimed at biomedical students, we’ll use some medical(ish) data.</p>
-</section>
-<section id="making-a-new-project" class="level2">
-<h2 class="anchored" data-anchor-id="making-a-new-project">Making a new project</h2>
-<p>First, let’s set up a nice clean working environment. Open up the R Studio program you downloaded, and click on the drop-down menu in the top right. Your interface shouldn’t look this cluttered, assuming you haven’t used R before.</p>
-<p><img src=".\R101imgs/r5.PNG" class="img-fluid"></p>
-<p>Then, click “New Project”, and when the menu comes up, select “New Directory”. If you have your own data in a specific folder on your PC, you could assign your new project to that folder.</p>
-<p><img src=".\R101imgs/r6.PNG" class="img-fluid"></p>
-<p><img src=".\R101imgs/r7.PNG" class="img-fluid"></p>
-<p><img src=".\R101imgs/r8.PNG" class="img-fluid"></p>
-<p>Go through New Directory, then New Project, then Create Project</p>
-<p>Making the project a subdirectory of a folder just means it will be stored in that folder- unless you have a specific place for your science or coding stuff, you can just put it in Documents. Then, you should see this screen.</p>
-<p><img src=".\R101imgs/r9.PNG" class="img-fluid"></p>
-<p>Next, I’m going to make some folders. This isn’t mandatory, but it makes keeping everything organised much easier.</p>
-<p><img src=".\R101imgs/r10.PNG" class="img-fluid"></p>
-<p>Click the little button labeled “Folder” and make three folders called “Script”, “Data” , and “Plots”. Your files area should then look like this:</p>
-<p><img src=".\R101imgs/r11.PNG" class="img-fluid"></p>
-<p>The best practice for using R is to write all your code in a script, so you can save, re-use, share, and even publish it. You can either press Ctrl+Shift+N, or use the top-left menu with the little plus sign to make a new script.</p>
-<p><img src=".\R101imgs/r12.PNG" class="img-fluid"></p>
-<p><img src=".\R101imgs/r13.PNG" class="img-fluid"></p>
-<p>Then click the save icon just under where it says “Untitled1” and double-click on Script, name it sensibly, and save, then you’ll have an empty script in your Script folder.</p>
-</section>
-<section id="installing-and-loading-packages" class="level2">
-<h2 class="anchored" data-anchor-id="installing-and-loading-packages">Installing and loading packages</h2>
-<p>You’re now ready to actually do some coding! Let’s get started loading in the packages and the data we need.</p>
-<p>Each package contains a set of functions that R can perform, used for things like drawing graphs, performing specific statistical analyses, or even high-end bioinformatics applications. We are going to use one called “tidyverse”, which has lots of useful bits and pieces for looking at and manipulating data.</p>
-<p>When using any packages for the first time on a device, you need to install them. Crucially, you do <strong>not</strong> want to install them in the script: otherwise, every time you run that script, it will reinstall your packages and waste time. Instead, type it in the <strong>console</strong> down in the bottom left.</p>
-<p><code>install.packages('tidyverse')</code></p>
-<p><img src=".\R101imgs/r15.PNG" class="img-fluid"></p>
-<p>Whenever you see text in that font, you can either type out or copy/paste it into R. For the installation, enter it into the console in the bottom left.</p>
-<p>Once you’ve installed the packages for the first time, you won’t have to do it again on that computer. You still have to load them every time, though, including this time- this lets you use them in the rest of your script. Therefore, we load packages at the start of the script, using this function</p>
-<p><code>library(tidyverse)</code></p>
-<p><img src=".\R101imgs/r16.PNG" class="img-fluid"></p>
-<p>To run a line of your script, either click on it and press Ctrl+Enter, or select it and click the run button on the top right.</p>
-</section>
-<section id="comments" class="level2">
-<h2 class="anchored" data-anchor-id="comments">Comments</h2>
-<p>Another useful thing you can do in R is usehashtags to leave comments. Starting the line with a hashtag means R won’t think you’ve written any code, so it’s just for you and any other humans reading your script.</p>
-<p>It’s good for reminding yourself why you’re using certain packages, functions, or types of graph, e.g.&nbsp;“#Using the kruskall-wallace test here as this data isn’t parametric”.</p>
-</section>
-<section id="installing-data" class="level2">
-<h2 class="anchored" data-anchor-id="installing-data">Installing data</h2>
-<p>If you’re in a rush, skip down to the **********: this section is about using your own data.</p>
-<p>If you want to load in your own data and it’s stored in Excel, Google Sheets, or anything else that you can <strong>export as a .csv file</strong>, then you want to export it as a .csv and save it to your “Data” folder in your project. Then use the function</p>
-<p><code>SensibleName &lt;- read.csv("Data/MyData.csv")</code></p>
-<p>(obviously replace the filename and the name you want to give the data)</p>
-<p><strong>Important note:</strong> When naming anything in R, do not use spaces or special characters! If you want to break up words, you can <code>DoThis</code>, or you can <code>do_this</code>. Otherwise, you’ll end up trying something like</p>
-<p><code>LogVariable &lt;- log(Old variable)</code></p>
-<p>And that will give you an error, because R doesn’t like spaces!</p>
-<p>Instead,</p>
-<p><code>LogVariable &lt;- log(OldVariable)</code></p>
-<p>should work fine. If it’s a small dataset, e.g.&nbsp;MyData contains four columns named Old variable, time, depth, species, you can just use</p>
-<p><code>colnames(MyData) &lt;- c(OldVariable, Time, Depth, Species)</code></p>
-<p>to fix it. However, for larger datasets, this is a pain in the neck, so try and think about this when you’re setting up your data in the first place!</p>
-<p>**********</p>
-<p>Today, though, we’re going to be using some pre-installed data on tooth growth in guinea pigs, and how it’s affected by supplements.</p>
-<p>To get this data up, all you need is</p>
-<p><code>data('ToothGrowth')</code></p>
-<p>Type it into the script, run that line, and you should see it come up in the “environment” panel on the right hand side. Click on it, and you’ll see it laid out as a table like so:</p>
-<p><img src=".\R101imgs/r17.PNG" class="img-fluid"></p>
-<p>It’s a very simple dataset: the <strong>dependent</strong> variable is the tooth length, <code>len</code>, and the <strong>independent</strong> variables are the supplement (VC or OJ) and the dose (0.5, 1.0, or 2.0).</p>
-<p>Now, if anyone has been going through this in one sitting: this is a good time for a break! You’ve installed R, set up your working environment, and got your data ready. Go get a drink, check your phone, do some stretches, etc.</p>
-<p>If you want to stop for the day, you can save your script: Ctrl + S, or the save button just above the tab labelled “PracticeScript.R”. If you close R, it should also ask if you want to save your workspace- clicking “Yes” means when you open it back up, all your datasets and such will already be loaded in.</p>
-<p>Great work!</p>
-</section>
-<section id="tidy-data" class="level2">
-<h2 class="anchored" data-anchor-id="tidy-data">Tidy Data</h2>
-<p>Welcome back! If you’ve closed and reopened R and the ToothGrowth data is gone, run your whole script again, and it should come back.</p>
-<p>One thing that R needs to work properly is “tidy” data; that is to say, data arranged where every row is a single sample. To elaborate, the following data are untidy:</p>
-<table class="caption-top table">
-<tbody>
-<tr class="odd">
-<td>Species</td>
-<td>OD1</td>
-<td>OD2</td>
-<td>OD3</td>
-<td>ControlOD</td>
-</tr>
-<tr class="even">
-<td>E. coli</td>
-<td>1.2</td>
-<td>1.1</td>
-<td>1.2</td>
-<td>0.2</td>
-</tr>
-<tr class="odd">
-<td>P. putida</td>
-<td>0.8</td>
-<td>0.8</td>
-<td>1.0</td>
-<td>0.1</td>
-</tr>
-</tbody>
-</table>
-<p>This is because each row has multiple readings on it. You could probably use R to do some things with these data, but it’s much better to format it like this:</p>
-<table class="caption-top table">
-<tbody>
-<tr class="odd">
-<td>Species</td>
-<td>OD</td>
-<td>Replicate</td>
-</tr>
-<tr class="even">
-<td>E. coli</td>
-<td>1.2</td>
-<td>OD1</td>
-</tr>
-<tr class="odd">
-<td>E. coli</td>
-<td>1.1</td>
-<td>OD2</td>
-</tr>
-<tr class="even">
-<td>E. coli</td>
-<td>1.2</td>
-<td>OD3</td>
-</tr>
-<tr class="odd">
-<td>E. coli</td>
-<td>0.2</td>
-<td>ControlOD</td>
-</tr>
-<tr class="even">
-<td>P. putida</td>
-<td>0.8</td>
-<td>OD1</td>
-</tr>
-<tr class="odd">
-<td>P. putida</td>
-<td>0.8</td>
-<td>OD2</td>
-</tr>
-<tr class="even">
-<td>P. putida</td>
-<td>1.0</td>
-<td>OD3</td>
-</tr>
-<tr class="odd">
-<td>P. putida</td>
-<td>0.1</td>
-<td>ControlOD</td>
-</tr>
-</tbody>
-</table>
-<p>R itself, and most of the instructions for using it, will assume your data look like the second table. If you have the first table, you can use</p>
-<p><code>NewTable &lt;- Table %&gt;%pivot_longer(!Species, names_to = "Replicate", values_to = "OD")</code></p>
-<p>This doesn’t matter right now, because we’re using the data that comes with R; however, it should come in useful later.</p>
-</section>
-<section id="checking-assumptions" class="level2">
-<h2 class="anchored" data-anchor-id="checking-assumptions">Checking Assumptions</h2>
-<p>Before doing any serious analyses of data, you should check for <strong>normal distribution</strong>. Making a histogram can tell me if my data are more or less normally distributed. The simplest barebones histogram requires only two lines of code:</p>
-<pre><code>ggplot(ToothGrowth, aes(x=len)) +
-geom_histogram(binwidth=2.5)</code></pre>
-<p>And produces this plot</p>
-<p><img src=".\R101imgs/r18.png" class="img-fluid"></p>
-<p>The <code>aes</code> function tells R what variable to use for the X and, if applicable, Y axes. Since this is just a histogram, it only needs an X variable, which is <code>len</code> (tooth length), and the Y axis shows how many measurements there are in each length category. You can change the <code>binwidth</code> if you want- play around with it, and see how the plot changes.</p>
-<p>This data looks fairly normally distributed to me: highest around the middle and lower around each end, without a clear skew to either side. There are a huge amount of more advanced ways to test for normality; as with many things in R, you can read more guides, ask someone experienced, or even just search the internet for “check for normal distribution R”, and get a good amount of information (although some of it might be very technical!)</p>
-<p>For now, let’s assume our data is normal, and we can use parametric statistical tests to analyse whether the effects of supplement and dose are <strong>significant</strong>.</p>
-</section>
-<section id="statistical-tests" class="level2">
-<h2 class="anchored" data-anchor-id="statistical-tests">Statistical tests</h2>
-<p>I would like to stress at this point that I am not a statistician, and this is not a stats class. The correct test to use depends on the data you’re looking at. The tests we use on this dataset are more about demonstrating how to do them in R, than about truly analysing the data.</p>
-<p>This guide will explain how and, roughly, when to use the following parametric tests:</p>
-<ul>
-<li><p>One-sample t-test</p></li>
-<li><p>Two-sample t-test</p></li>
-<li><p>Pearson’s correlation</p></li>
-<li><p>ANOVA</p></li>
-</ul>
-<section id="one-sample-t-tests" class="level3">
-<h3 class="anchored" data-anchor-id="one-sample-t-tests">One-sample t-tests</h3>
-<p>This test is for comparing the mean of a group to an expected value. For the sake of this example, let’s say vets are stating that guinea pigs given a 1g dose of the VC supplement will see their teeth grow to 17 mm. In this context, the <strong>null hypothesis</strong> is that the average will match the expected value.</p>
-<p>Firstly, let’s remove the measurements we’re not interested in. The <code>filter</code> function is perfect for this:</p>
-<p><code>1mgVC &lt;- filter(ToothGrowth, supp == 'VC', dose == 1.0)</code></p>
-<p>Oh wait, that’s not right. If we start the name of the output with a number, R gets confused.</p>
-<p><code>OnemgVC &lt;- filter(ToothGrowth, supp == 'VC', dose == 1.0)</code></p>
-<p><img src=".\R101imgs/r19.PNG" class="img-fluid"></p>
-<p>Now that subset of data is available to view on its own.</p>
-<p>Running a t-test on these data is extremely simple: we just use</p>
-<p><code>t.test(OnemgVC$len, mu = 17)</code></p>
-<p>Running the t-test should give the following output in the console:</p>
-<p><img src=".\R101imgs/r20.PNG" class="img-fluid"></p>
-<p>The p-value is very high, 0.779. In the context of a one-sample t-test, the p-value being <strong>over</strong> the significance level (usually 0.05, but it varies) indicates <strong>support for the null hypothesis</strong>.</p>
-<p>Therefore, the vets’ claims about 1g of VC producing 17mm teeth is supported by these data!</p>
-<p>(Note: No vet has actually claimed this to my knowledge, all resemblance to real animal medicine is entirely coincidental)</p>
-</section>
-<section id="two-sample-t-test" class="level3">
-<h3 class="anchored" data-anchor-id="two-sample-t-test">Two-sample t-test</h3>
-<p>This is for if we want to see if the means of two groups are significantly different to each other. We’re going to use it to compare mean tooth length between the different supplements. However, the effects of each supplement might be strongly affected by dosage. So we’re going to use a few functions to <strong>group</strong> the dataset by dose before we compare the different supplements.</p>
-<p>Some of you may know that in coding, if you want to perform several operations in a row to your data, you can end up having to nest functions inside each other, which can be annoying and untidy. The tidyverse package provides an elegant solution: the pipe, <code>%&gt;%</code>, which can be printed by pressing Ctrl+Shift+M in R.</p>
-<p>Basically, if you use a pipe it will shunt the output of one line to become the input of the next line. So we can simply use</p>
-<pre><code>
-#The data we want to use
-
-ToothGrowth %&gt;%
-
-#Groups the data by dose, so we're comparing the same dose of different supplements
-
-  group_by(dose) %&gt;%
-
-#The group_map function allows for the grouped data to be operated on separately, by whatever function is in the brackets
-
-  group_map(~ t.test(len ~ supp, .x))</code></pre>
-<p>This should give us the following output, in the console:</p>
-<p><img src=".\R101imgs/r21.PNG" class="img-fluid"></p>
-<p>Here we have two p-values below the significance threshold, which supports the <strong>alternative hypothesis</strong>. In this case, it looks like there are <strong>significant</strong> differences in tooth length between supplements, but not at the highest dose. Since R also tells us the means, we can see that OJ correlates with significantly longer teeth at doses 0.5 and 1.0.</p>
-</section>
-<section id="correlation-pearsons" class="level3">
-<h3 class="anchored" data-anchor-id="correlation-pearsons">Correlation (Pearson’s)</h3>
-<p>This test is used to look for a <strong>linear relationship</strong> between two numeric variables. Ideally, we would be doing this for two continuous variables; when one of our numeric variables can only be 0.5, 1, or 2, it’s probably not the best measurement. Correlation tests are great for looking at the relationship between e.g.&nbsp;height and weight, or average grade in Maths and Biology. Still, we can use it for these data.</p>
-<p>Firstly, let’s make a scatterplot to see if there’s any indication of correlation.</p>
-<pre><code>#Specify the data, and then the variables we're using for the X and Y axis
-
-ggplot(ToothGrowth, aes(x = dose, y = len) +
-
-#Specify the type of plot you want
-
-geom_point()</code></pre>
-<p>This produces the following graph. Doesn’t look great, because of the x values all being one of three numbers.</p>
-<p><img src=".\R101imgs/r22.png" class="img-fluid"></p>
-<p>Even so, it looks like there might be a positive trend. Let’s use the R function to perform a Pearson’s correlation test.</p>
-<p><code>cor.test(~len + dose, method = "pearson", data = ToothGrowth)</code></p>
-<p>This gives us the following output</p>
-<p><img src=".\R101imgs/r23.PNG" class="img-fluid"></p>
-<p>R likes to give very small numbers in a scientific notation-style format: 1.233e-14 is equal to 1.233 * 10-14, which is an incredibly tiny number. This is very strong support for a real correlation between dose and tooth length, and the fact the t statistic is a positive number means that correlation is also positive; a higher dose means a longer tooth.</p>
-<p>Fantastic!</p>
-</section>
-<section id="anova" class="level3">
-<h3 class="anchored" data-anchor-id="anova">ANOVA</h3>
-<p>Our last test is designed for comparing the means of multiple different categories.</p>
-<p>For this, you need to calculate the <strong>standard error</strong>. It’s easy enough in R, as it’s a function of the standard deviation and the number of measurements.</p>
-<p>The following code will produce a summary with the means and standard errors of different categories.</p>
-<pre><code>#Provide a name for the summary, so R stores it as a dataframe
-
-ToothSummary &lt;-
-
-#Specify the data, like before
-
-ToothGrowth %&gt;%
-
-#Group by supplement, so the means are calculated within supplements. Doing it this way does mean the different doses are pooled together
-
-group_by(supp) %&gt;%
-
-#This gives us the mean length and standard error for each supplement
-
-#the "sqrt(n())" part is just the square root of 30 in this case, because there are 30 measurements for each supplement
-
-summarise(Mean = mean(len), SE = sd(len)/sqrt(n()))</code></pre>
-<p>Running this code produces a new dataframe in your environment section, which looks like this</p>
-<p><img src=".\R101imgs/r24.PNG" class="img-fluid"></p>
-<p>We can see the mean and standard error for each supplement! Now, we can use those data to make a beautifully informative graph.</p>
-<pre><code>
-ggplot(ToothSummary, aes(x = supp, y = mean, ymin = mean - SE, ymax = mean + SE))+
-
-geom_point() +
-
-#This adds another layer of information to the graph: the errorbar will automatically use the ymin and ymax values in the aes section
-
-geom_errorbar()</code></pre>
-<p><img src=".\R101imgs/r25.png" class="img-fluid"></p>
-<p>The fact that these error bars don’t overlap is usually an indicator that two means might be significantly different.</p>
-<p>In order to actually do the ANOVA, we first need to make a <strong>linear model</strong>- just one line of code</p>
-<p><code>ToothModel &lt;- lm(len ~ supp, data = ToothGrowth)</code></p>
-<p>These models are quite flexible; depending on the type of data we input, R will treat it slightly differently. Since supp is a <strong>categorical</strong> variable, it will perform an ANOVA; if it was a <strong>numeric</strong> variable, it would perform a regression.</p>
-<p>This only matters if, in your own data, you were planning to input your categories as numbers (e.g.&nbsp;different treatments labelled 1, 2, and 3) or vice versa (e.g.&nbsp;different dosages named “One_ml”, “Two_ml”, and “Three_ml”). That would result in R conducting the wrong analysis.</p>
-<p>Now, we need to perform an ANOVA on this linear model, which is even easier:</p>
-<p><code>anova(ToothModel)</code></p>
-<p>This should give you the following output:</p>
-<p><img src=".\R101imgs/r26.PNG" class="img-fluid"></p>
-<p>The p-value is just over 0.05, so if that’s our significance threshold, then the difference between supplements isn’t quite significant. However, we know from our previous analyses that the differences between supplements are affected by dose.</p>
-<p>Here, R comes into its own; it’s very easy to modify the code we already have to account for the dose and the supplement.</p>
-<p>Here’s the code we just used, sans comments:</p>
-<pre><code>
-ToothSummary &lt;-
-
-  ToothGrowth %&gt;%
-
-  group_by(supp) %&gt;%
-
-  summarise(Mean = mean(len), SE = sd(len)/sqrt(n()))
-
-ggplot(ToothSummary, aes(x = supp, y = Mean, ymin = Mean - SE, ymax = Mean + SE))+
-
-  geom_point() +
-
-   geom_errorbar()
-
-ToothModel &lt;- lm(len ~ supp, data = ToothGrowth)
-
-anova(ToothModel) </code></pre>
-<p>Now, I’m going to make a few small modifications; grouping by dose as well as supplement, using <code>colour</code> within <code>aes</code>, and adding <code>dose</code> to the linear model.</p>
-<pre><code>ToothSummary2 &lt;-
-
-  ToothGrowth %&gt;%
-
-  group_by(supp, dose) %&gt;%
-
-  summarise(Mean = mean(len), SE = sd(len)/sqrt(n()))
-
-ggplot(ToothSummary2, aes(x = dose, y = Mean, colour = supp, ymin = Mean - SE, ymax = Mean + SE))+
-
-  geom_point() +
-
-   geom_errorbar()
-
-ToothModel2 &lt;- lm(len ~ supp + dose, data = ToothGrowth)
-
-anova(ToothModel2)</code></pre>
-<p>These few tweaks will produce an entirely new graph and analysis:</p>
-<p><img src=".\R101imgs/r27.png" class="img-fluid"></p>
-<p>Looks like the highest dose has very little difference between the supplements, but the differences are more pronounced at lower doses- this is the same thing the two-sample t-test showed us.</p>
-<p>Here’s the output of the ANOVA: we see much higher significance of both supplement and dose when we separate them out.</p>
-<p><img src=".\R101imgs/r28.PNG" class="img-fluid"></p>
-</section>
-</section>
-<section id="better-graphs" class="level2">
-<h2 class="anchored" data-anchor-id="better-graphs">Better Graphs</h2>
-<p>We’ve seen a few graphs so far, but they’ve been very basic. It would be impractical to show you every single option R gives you for making graphs, so I’m going to introduce some key points and leave the door open for finding out more.</p>
-<p>So far, we’ve used a histogram, a scatter plot, and a dot plot with error bars. We’re going to use the last one as an example for modifying the look of the graph; see how the colour is specified in the brackets.</p>
-<pre><code>
-ggplot(ToothSummary, aes(x = supp, y = Mean, ymin = Mean - SE, ymax = Mean + SE))+
-
-  geom_point(colour = 'red') +
-
-  geom_errorbar(colour = 'red', width = 0.3)</code></pre>
-<p><img src=".\R101imgs/r29.png" class="img-fluid"></p>
-<p>This is one use of the brackets after the <code>geom_line</code>s, which are normally empty. The other usage is drawing from different datasets, like so</p>
-<pre><code>ggplot(ToothSummary, aes(x = supp, y = Mean))+
-
-  geom_point(colour = 'red') +
-
-  geom_errorbar(data = ToothSummary, aes(ymin = Mean - SE, ymax = Mean + SE), colour = 'red')+
-
-  geom_point(data = ToothGrowth, aes(x = supp, y = len, colour = dose))</code></pre>
-<p><img src=".\R101imgs/r30.png" class="img-fluid"></p>
-<p>This graph is a little messy, but can be useful. For example, if you’ve got some new data and just want a brief overview, you can tell from the above graph that there’s a similar range from both supplements, one average is higher than the other, and the dose strength and tooth length seem to correlate.</p>
-<p>One thing that all these graphs have in common is that they’re not very good-looking or properly labelled.. Let’s take the code for this graph:</p>
-<p><img src=".\R101imgs/r27-01.png" class="img-fluid"></p>
-<p>And add on some labels</p>
-<pre><code>ggplot(ToothSummary2, aes(x = dose, y = Mean, colour = supp, ymin = Mean - SE, ymax = Mean + SE))+
-
-  geom_point() +
-
-#The bars do not need to be that wide, it looks unbalanced
-
-  geom_errorbar(width = 0.1) +
-
-#labs sets the labels
-
- labs(x = 'Dose (g)', y = 'Mean Tooth Length (mm)', title = 'The effect of supplement and    dosage on guinea pig teeth') +
-
- #This line allows us to edit the legend, and specify the colours. You can use names of colours, or hex codes.
-
- scale_colour_discrete(name = 'Supplement', labels = c('Orange Juice', 'Various Carrots'), type = c('Red', 'Blue'))</code></pre>
-<p><img src=".\R101imgs/rng.png" class="img-fluid"></p>
-<p>Wait, that graph is way smaller than some of my previous ones!</p>
-<p>That’s because I’ve been right-clicking to copy and paste them, which is sort of fine but screws with standardisation; this is because you can change the size of the panel where your plots show up by clicking and dragging.</p>
-<p><img src=".\R101imgs/r32.png" class="img-fluid"></p>
-<p><img src=".\R101imgs/r33.PNG" class="img-fluid"></p>
-<p>If I copied and pasted that graph twice, from the first and the second sized window, I’d get two differently sized graphs. The proper way around this nonsense is to save your graphs using the ggsave function, which is thankfully really easy. You need to <strong>name</strong> your graph. This will mean your graph doesn’t appear automatically when you run the code.</p>
-<pre><code>NiceGraph &lt;- ggplot(ToothSummary2, aes(x = dose, y = Mean, colour = supp, ymin = Mean - SE, ymax = Mean + SE))+
-
-  geom_point() +
-
-  #The bars do not need to be that wide, it looks unbalanced
-
-  geom_errorbar(width = 0.1) +
-
-  #labs sets the labels
-
-  labs(x = 'Dose (g)', y = 'Mean Tooth Length (mm)', title = 'The effect of supplement and dosage on guinea pig teeth') +
-
-  #This line allows us to edit the legend, and specify the colours. You can use names of colours, or hex codes.
-
-  scale_colour_discrete(name = 'Supplement', labels = c('Orange Juice', 'Various Carrots'), type = c('Red', 'Blue'))</code></pre>
-<p>And then you need to</p>
-<p><code>ggsave('Plots/NiceGraph.png', width = 15, height = 10, units = 'cm')</code></p>
-<p>And this lovely image will be in your “Plots” folder!</p>
-<p><img src="Plots/NiceGraph.png" class="img-fluid"></p>
-<p>If I want to print it to the Plots section where all my other graphs have shown up, I just have to run <code>NiceGraph</code>.</p>
-<p>If I really wanted to, I could go back and do the same thing to all the other plots- it would be as simple as adding a <code>plotname &lt;-</code> before each bit of ggplot code, and then copying the ggsave line a few times and replacing <code>'NiceGraph'</code> with <code>'plotname'</code>.</p>
-<p>There’s lots of interesting things you can do with graphs, and equally, a few niche things to remember to make specific things work. For example, if I’d written the code for this</p>
-<p><img src=".\R101imgs/r30-01.png" class="img-fluid"></p>
-<p>As:</p>
-<pre><code>ggplot(ToothSummary, aes(x = supp, y = Mean, ymin = Mean - SE, ymax = Mean + SE))+
-
-  geom_point(colour = 'red') +
-
-  geom_errorbar(colour = 'red')+
-
-  geom_point(data = ToothGrowth, aes(x = supp, y = len, colour = dose))</code></pre>
-<p>Instead of the way I did it, which is:</p>
-<pre><code>ggplot(ToothSummary, aes(x = supp, y = Mean))+
-
-  geom_point(colour = 'red') +
-
-  geom_errorbar(data = ToothSummary, aes(ymin = Mean - SE, ymax = Mean + SE), colour = 'red')+
-
-  geom_point(data = ToothGrowth, aes(x = supp, y = len, colour = dose))</code></pre>
-<p>It just wouldn’t work, and be very frustrating to solve.</p>
-<p>There are more graphs and ways to style them than we could possibly cover here, but there’s a ggplot cheat sheet in the references section. Try some things out, search the internet, compare notes with a classmate, and see if you can have fun.</p>
-</section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">References</h2>
-<p>A significant portion of this guide has been adapted from the excellent Introductory Biostatistics with R, by Dylan Z. Childs, Bethan J. Hindle and Philip H. Warren, published 2022-12-07. If you’re seeking a more in-depth understanding of how to use R, non-parametric tests, and also the statistics underpinning all this, I cannot recommend it enough: it’s available at <a href="https://tuos-bio-data-skills.github.io/intro-stats-book/" class="uri">https://tuos-bio-data-skills.github.io/intro-stats-book/</a></p>
-<p>Cheat sheets can be a fantastic resource, especially since memorising every R function you might need is impossible for most of us and impractical for almost everyone else.</p>
-<p>Dplyr and ggplot2 are both part of the tidyverse package: the former is for data manipulation</p>
-<p><a href="https://nyu-cdsc.github.io/learningr/assets/data-transformation.pdf" class="uri">https://nyu-cdsc.github.io/learningr/assets/data-transformation.pdf</a></p>
-<p>And the latter, of course, is for making graphs</p>
-<p><a href="https://rstudio.github.io/cheatsheets/data-visualization.pdf" class="uri">https://rstudio.github.io/cheatsheets/data-visualization.pdf</a></p>
-<p>These cheat sheets can look a little overwhelming, as they try and cram everything you might need into a compact PDF- they’re best used in conjunction with guides such as this one and the book linked above, advice from experienced R users (in person or found online), and trial and error.</p>
-
-
-</section>
-</section>
-
-</main> <!-- /main -->
+</header><main class="content" id="quarto-document-content">
+<p># Welcome… To the R-chive</p>
+<p>Check the Projects tab for my R 101 tutorial!</p>
+
+
+</main></div>
+  </div>
+</div>
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -640,13 +151,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
