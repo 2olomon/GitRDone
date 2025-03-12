@@ -462,7 +462,7 @@ summarise(Mean = mean(len), SE = sd(len)/sqrt(n()))</code></pre>
 <p><img src=".\R101imgs/image32.png" class="img-fluid"></p>
 <p>We can see the mean and standard error for each supplement! Now, we can use those data to make a beautifully informative graph.</p>
 <pre><code>
-ggplot(ToothSummary, aes(x = supp, y = mean, ymin = mean - SE, ymax = mean + SE))+
+ggplot(ToothSummary, aes(x = supp, y = Mean, ymin = Mean - SE, ymax = Mean + SE))+
 
 geom_point() +
 
