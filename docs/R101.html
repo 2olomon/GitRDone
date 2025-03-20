@@ -168,6 +168,7 @@ ul.task-list li input[type="checkbox"] {
 <p>This is a basic introduction to the coding language known as R. Our first bit of good news is that R has a fairly intuitive graphical interface, called R Studio, so we don’t have to faff about with command lines to use it. Our second bit of good news is that it’s very straightforward to select, order, and analyse data, and make some really beautiful graphs. Let’s get started!</p>
 <section id="downloading-and-installing-r" class="level2">
 <h2 class="anchored" data-anchor-id="downloading-and-installing-r">Downloading and installing R</h2>
+<p>YSJ students can download R and RStudio onto a University device via [AppsAnywhere] (https://appsanywhere.yorksj.ac.uk/): students at other universities may have a similar arrangement, please contact your IT service for details. Use the following guide for personal computers.</p>
 <p>Go to <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a> , scroll down a little, and click on “DOWNLOAD AND INSTALL R”</p>
 <p><img src=".\R101imgs/image15.png" class="img-fluid"></p>
 <p>Click through the first link to the following page and select the appropriate option from the top box.</p>
@@ -190,7 +191,8 @@ ul.task-list li input[type="checkbox"] {
 <p><code>X &lt;- 25</code></p>
 <p>There are a few cases where naming a single variable can be useful. However, if we want to create a vector, we need multiple variables.</p>
 <p><code>Numbers &lt;- c(1, 2, 3, 4, 5)</code></p>
-<p>If you want your vector to contain words, not just numbers, you need to put quotemarks around them</p>
+<p>Note: the c stands for “combine”: here, you combine some numbers into a variable called “Numbers”.</p>
+<p>If you want your vector to contain words, not just numbers, you need to put quotemarks around them. Make sure they’re straight ones like ” or ’, and not curly ” or ’.</p>
 <p><code>Dogs &lt;- c("Xena", "Max", "Luna", "Holly")</code></p>
 <p>Try copying these examples into the console section, at the bottom left of the screen, and then press enter to run them.</p>
 <p><img src=".\R101imgs/image30.png" class="img-fluid"></p>
@@ -198,7 +200,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Now that we have our vectors, let’s do some maths to them!</p>
 <p>Firstly, “call” your vector by typing it and running it.</p>
 <p><code>Numbers</code></p>
-<p>See how it prints out the numbers you chose? Now try</p>
+<p>See how the Numbers you saved earlier are printed in the console? Now try</p>
 <p><code>Numbers - 2</code></p>
 <p><code>Numbers * 5</code></p>
 <p>And we can save an output as a new vector by naming it.</p>
@@ -218,13 +220,13 @@ ul.task-list li input[type="checkbox"] {
 <p><img src=".\R101imgs/image24.png" class="img-fluid"></p>
 <p><img src=".\R101imgs/image5.png" class="img-fluid"></p>
 <p>Go through New Directory, then New Project, then Create Project</p>
-<p>Making the project a subdirectory of a folder just means it will be stored in that folder- unless you have a specific place for your science or coding stuff, you can just put it in Documents. Then, you should see this screen.</p>
+<p>Don’t be alarmed by it asking about subdirectories- the folder it’s a subdirectory of, is just the folder your project is stored in. If you don’t have a specific folder for R projects, or IT learning, or university stuff generally, just use My Documents.</p>
 <p><img src=".\R101imgs/image20.png" class="img-fluid"></p>
-<p>Next, I’m going to make some folders. This isn’t mandatory, but it makes keeping everything organised much easier.</p>
+<p>Next, I’m going to make some folders. This isn’t mandatory, but it makes keeping everything organised much easier. If you find yourself doing serious projects in the future, this kind of structure will really help.</p>
 <p><img src=".\R101imgs/image29.png" class="img-fluid"></p>
-<p>Click the little button labeled “Folder” and make three folders called “Script”, “Data” , and “Plots”. Your files area should then look like this:</p>
+<p>Click the little button labeled “Folder”, just to the right of the new central text box pictured, and make three folders called “Script”, “Data” , and “Plots”. Your files area should then look like this:</p>
 <p><img src=".\R101imgs/image22.png" class="img-fluid"></p>
-<p>The best practice for using R is to write all your code in a script, so you can save, re-use, share, and even publish it. You can either press Ctrl+Shift+N, or use the top-left menu with the little plus sign to make a new script.</p>
+<p>The best practice for using R is to write all your code in a <strong>script</strong>, so you can save, re-use, share, and even publish it. You can either press Ctrl+Shift+N, or use the menu in the very top-left, with the little plus sign, to make a new script.</p>
 <p><img src=".\R101imgs/image4.png" class="img-fluid"></p>
 <p><img src=".\R101imgs/image35.png" class="img-fluid"></p>
 <p>Then click the save icon just under where it says “Untitled1” and double-click on Script, name it sensibly, and save, then you’ll have an empty script in your Script folder.</p>
@@ -240,11 +242,11 @@ ul.task-list li input[type="checkbox"] {
 <p>Once you’ve installed the packages for the first time, you won’t have to do it again on that computer. You still have to load them every time, though, including this time- this lets you use them in the rest of your script. Therefore, we load packages at the start of the script, using this function</p>
 <p><code>library(tidyverse)</code></p>
 <p><img src=".\R101imgs/image19.png" class="img-fluid"></p>
-<p>To run a line of your script, either click on it and press Ctrl+Enter, or select it and click the run button on the top right.</p>
+<p>To run a line of your script, either click on it so your cursor is at the end of the line and press Ctrl+Enter, or highlight the whole line with your mouse and click the run button on the top right.</p>
 </section>
 <section id="comments" class="level2">
 <h2 class="anchored" data-anchor-id="comments">Comments</h2>
-<p>Another useful thing you can do in R is usehashtags to leave comments. Starting the line with a hashtag means R won’t think you’ve written any code, so it’s just for you and any other humans reading your script.</p>
+<p>Another useful thing you can do in R is use hashtags to leave comments. Starting the line with a hashtag means R won’t think you’ve written any code, so it’s just for you and any other humans reading your script.</p>
 <p>It’s good for reminding yourself why you’re using certain packages, functions, or types of graph, e.g.&nbsp;“#Using the kruskall-wallace test here as this data isn’t parametric”.</p>
 </section>
 <section id="uploading-data" class="level2">
@@ -615,12 +617,15 @@ ggplot(ToothSummary, aes(x = supp, y = Mean, ymin = Mean - SE, ymax = Mean + SE)
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
 <p>A significant portion of this guide has been adapted from the excellent Introductory Biostatistics with R, by Dylan Z. Childs, Bethan J. Hindle and Philip H. Warren, published 2022-12-07. If you’re seeking a more in-depth understanding of how to use R, non-parametric tests, and also the statistics underpinning all this, I cannot recommend it enough: it’s available at <a href="https://tuos-bio-data-skills.github.io/intro-stats-book/" class="uri">https://tuos-bio-data-skills.github.io/intro-stats-book/</a></p>
-<p>Cheat sheets can be a fantastic resource, especially since memorising every R function you might need is impossible for most of us and impractical for almost everyone else.</p>
+<p>“Cheat sheets” can be a fantastic resource, especially since memorising every R function you might need is impossible for most of us and impractical for almost everyone else.</p>
 <p>Dplyr and ggplot2 are both part of the tidyverse package: the former is for data manipulation</p>
 <p><a href="https://nyu-cdsc.github.io/learningr/assets/data-transformation.pdf" class="uri">https://nyu-cdsc.github.io/learningr/assets/data-transformation.pdf</a></p>
 <p>And the latter, of course, is for making graphs</p>
 <p><a href="https://rstudio.github.io/cheatsheets/data-visualization.pdf" class="uri">https://rstudio.github.io/cheatsheets/data-visualization.pdf</a></p>
 <p>These cheat sheets can look a little overwhelming, as they try and cram everything you might need into a compact PDF- they’re best used in conjunction with guides such as this one and the book linked above, advice from experienced R users (in person or found online), and trial and error.</p>
+<p>If you want some more formal instruction in R, that goes far deeper than this little introduction, Harvard has a free course!</p>
+<p><a href="https://learning.edx.org/course/course-v1:HarvardX+PH125.1x+3T2024/home">Course | Data Science: R Basics | edX</a></p>
+<p>Be careful to choose the free version, are there are several options which would results in you spending money.</p>
 
 
 </section>
